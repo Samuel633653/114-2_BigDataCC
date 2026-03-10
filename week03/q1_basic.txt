@@ -1,2 +1,4 @@
 ## pwd
 /home/student108
+## ls
+README.txt  documents  exercises  myfile.txt  practice  projects  scripts
