@@ -1,0 +1,42 @@
+```
+姓名：
+學號：
+
+=== 任務 1：確認 WSL 環境 ===
+在 Windows PowerShell 中執行：
+wsl --list --verbose
+（貼上結果）
+
+=== 任務 2：安裝 MySQL ===
+進入 WSL 後依序執行，貼上每步結果：
+
+步驟 1：更新套件庫
+sudo apt update && sudo apt upgrade -y
+（貼上最後幾行結果即可）
+
+步驟 2：安裝 MySQL Server
+sudo apt install -y mysql-server
+（貼上最後幾行結果即可）
+
+步驟 3：啟動 MySQL 服務
+sudo service mysql start
+（貼上結果）
+
+步驟 4：確認 MySQL 正在運行
+sudo service mysql status
+（貼上結果，應顯示 running）
+
+=== 任務 3：登入 MySQL ===
+
+步驟 1：用 sudo 登入 MySQL（WSL 預設不需要密碼）
+sudo mysql
+（貼上登入成功畫面，應顯示 Welcome to the MySQL monitor）
+
+步驟 2：確認版本
+SELECT VERSION();
+（貼上結果）
+
+步驟 3：查看預設資料庫
+SHOW DATABASES;
+（貼上結果）
+```
